@@ -42,6 +42,6 @@ For this project, you need access to Watson AI Natural Language Processing Libra
 * Fork this repository
 * Clone it to your local PC
 * In the repository, go to SentimentAnalysis & open sentiment_analysis.py in a code editor
-* Inside emotion_detector function, paste the **container URL** you saved earlier to the variable 'base_url' & uncomment it.
+* Inside sentiment_analyzer function, paste the **container URL** you saved earlier to the variable 'base_url' & uncomment it.
 * Save the file, open commandline, navigate to the repository and run server.py. Your app will be hosted on web.
 * Go to localhost address '127.0.0.1:5000' on any browser to use the app.
