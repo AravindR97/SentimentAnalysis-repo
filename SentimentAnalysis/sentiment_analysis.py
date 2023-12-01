@@ -6,8 +6,8 @@ the evaluated sentiment label and sentiment score to the App
 import requests
 
 def sentiment_analyzer(text_to_analyze):
-    #container_url =
-    url = container_url + '/v1/watson.runtime.nlp.v1/NlpService/SentimentPredict'
+    #container_url = 'https://e3ed180236.dsceapp.buildlab.cloud'
+    url = 'https://e3ed180236.dsceapp.buildlab.cloud/v1/watson.runtime.nlp.v1/NlpService/SentimentPredict'
     header = {"grpc-metadata-mm-model-id": "sentiment_aggregated-bert-workflow_lang_multi_stock"}
     obj = { "raw_document": { "text": text_to_analyze } }
 
@@ -16,3 +16,4 @@ def sentiment_analyzer(text_to_analyze):
     label = result['documentSentiment']['label']
     score = result['documentSentiment']['score']
     return {'label': label, 'score': score}
+    
